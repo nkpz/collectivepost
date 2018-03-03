@@ -8,5 +8,8 @@
     "koa-json": "^2.0.2",
     "koa-router": "^7.4.0",
     "koa-views": "^6.1.4"
+  },
+  "scripts": {
+    "dev": "node index.js"
   }
 }
