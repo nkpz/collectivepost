@@ -1,0 +1,15 @@
+version: "3"
+services:
+    web:
+        image: "node:8"
+        user: "node"
+        working_dir: /data/code/collectivepost
+        environment:
+            - NODE_ENV=production
+        volumes:
+            - ./:/data/code/collectivepost
+        expose:
+            - "8000"
+        ports:
+            - "8000:8000"
+        command: npm run dev
